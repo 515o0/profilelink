@@ -85,17 +85,18 @@ button {
 }
 
 
+
 /* ヘッダーの穴あけパンチ風装飾 */
 
 .header-holes {
   position: absolute;
-  top: 28px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: clamp(12px, 3.6vw, 60px);
 
   z-index: 5;
   pointer-events: none;
@@ -103,17 +104,18 @@ button {
 
 .header-holes span {
   display: block;
-  width: 35px;
-  height: 35px;
+  width: clamp(14px, 2.1vw, 35px);
+  height: clamp(14px, 2.1vw, 35px);
   border-radius: 50%;
 
   background: #f2f8ff;
-  border: 6px solid #fafcff;
+  border: clamp(3px, 0.36vw, 6px) solid #fafcff;
 
   box-shadow:
     0 1px 3px rgba(98, 137, 167, 0.15),
     inset 0 2px 5px rgba(98, 137, 167, 0.22);
 }
+
 
 
 
