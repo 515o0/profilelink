@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Profile Link | PROFILE</title>
+
+  <!-- CSSの読み込み -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JavaScriptの読み込み -->
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- =========================
+       ヘッダー
+  ========================= -->
+  <header class="header">
+
+<!-- 穴あけパンチ風装飾 -->
+<div class="header-holes" aria-hidden="true">
+  <span></span>
+  <span></span>
+</div>
+
+    <div class="header-inner">
+
+ <!-- ヘッダーロゴ -->
+<a href="index.html" class="header-logo">
+  <img
+    src="images/header-logo.png"
+    alt="Profile Link"
+    class="header-logo-image">
+</a>
+
+      <nav class="nav" aria-label="メインメニュー">
+        <a href="index.html">TOP</a>
+        <a href="all.html" aria-current="page">PROFILE</a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         個人プロフィールページ
+    ========================= -->
+    <section class="detail-page" aria-label="個人プロフィール">
+
+      <div class="detail-inner">
+
+        <!-- 一覧に戻るボタン -->
+        <div class="detail-back">
+
+          <a href="all.html" class="detail-back-button">
+            ← 一覧に戻る
+          </a>
+
+        </div>
+
+
+        <!-- =========================
+             プロフィール表示エリア
+        ========================= -->
+        <div class="detail-viewer">
+          
+          <div class="detail-profile-area">
+
+  <div class="detail-profile-area">
+
+  <!-- 記入済みプロフィール画像 -->
+  <img
+    src="images/profile-hanako.png"
+    alt="花子のプロフィール帳"
+    class="detail-profile-image">
+
+  <!-- 画像がない人の仮表示 -->
+  <div class="detail-placeholder" style="display: none;">
+
+    <span class="detail-placeholder-title">
+      PROFILE
+    </span>
+
+    <p class="detail-placeholder-text">
+      ここにプロフィール帳が入ります
+    </p>
+
+  </div>
+
+</div>
+
+        </div>
+
+
+        <!-- =========================
+             前へ・次へボタン
+        ========================= -->
+        <nav class="detail-navigation" aria-label="プロフィールの切り替え">
+
+          <a href="profile.html?id=09"
+             class="detail-nav-button detail-prev">
+            ← 前へ
+          </a>
+
+          <a href="profile.html?id=02"
+             class="detail-nav-button detail-next">
+            次へ →
+          </a>
+
+        </nav>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       フッター
+  ========================= -->
+  <footer class="footer">
+
+    <p class="copyright">
+      © Profile Link
+    </p>
+
+  </footer>
+
+</body>
+</html>

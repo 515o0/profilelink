@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Profile Link | ALL PROFILES</title>
+
+  <!-- CSSの読み込み -->
+  <link rel="stylesheet" href="style.css">
+    <!-- JavaScriptの読み込み -->
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- =========================
+       ヘッダー
+  ========================= -->
+  <header class="header">
+
+<!-- 穴あけパンチ風装飾 -->
+<div class="header-holes" aria-hidden="true">
+  <span></span>
+  <span></span>
+</div>
+
+    <div class="header-inner">
+
+ <!-- ヘッダーロゴ -->
+<a href="index.html" class="header-logo">
+  <img
+    src="images/header-logo.png"
+    alt="Profile Link"
+    class="header-logo-image">
+</a>
+
+      <!-- ナビゲーション -->
+      <nav class="nav" aria-label="メインメニュー">
+        <a href="index.html">TOP</a>
+        <a href="all.html" aria-current="page">PROFILE</a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         プロフィール一覧
+    ========================= -->
+    <section class="all-profiles">
+
+      <div class="all-inner">
+
+        <!-- 見出し・検索 -->
+        <div class="all-heading">
+
+          <h2 class="all-section-title">
+            みんなのプロフィール
+          </h2>
+
+          <div class="profile-search">
+
+            <label for="profile-search-input">
+              名前でさがす
+            </label>
+
+            <input
+              type="search"
+              id="profile-search-input"
+              placeholder="ニックネームを入力"
+              autocomplete="off"
+            >
+
+          </div>
+
+        </div>
+
+
+        <!-- プロフィールカード一覧 -->
+        <div class="profile-grid">
+
+         <!-- プロフィール01：花子 -->
+<a href="profile.html?id=01"
+   class="profile-card color-blue"
+   data-name="花子">
+
+<div class="profile-avatar">
+  <img
+    src="images/icon-hanako.png"
+    alt=""
+    class="profile-avatar-image">
+</div>
+
+  <h3 class="profile-name">花子</h3>
+
+  <span class="profile-link-text">
+    PROFILE →
+  </span>
+
+</a>
+
+
+          <!-- プロフィール02 -->
+          <a href="profile.html?id=02"
+             class="profile-card color-yellow"
+             data-name="太郎">
+
+           <div class="profile-avatar">
+  <img
+    src="images/icon-taro.png"
+    alt=""
+    class="profile-avatar-image">
+</div>
+
+  <h3 class="profile-name">太郎</h3>
+
+  <span class="profile-link-text">
+    PROFILE →
+  </span>
+
+          </a>
+
+
+          <!-- プロフィール03 -->
+          <a href="profile.html?id=03"
+             class="profile-card color-pink"
+             data-name="みう">
+
+            <div class="profile-avatar">
+  <img
+    src="images/icon-miu.png"
+    alt=""
+    class="profile-avatar-image">
+</div>
+
+  <h3 class="profile-name">みう</h3>
+
+  <span class="profile-link-text">
+    PROFILE →
+  </span>
+
+          </a>
+
+
+          <!-- プロフィール04 -->
+          <a href="profile.html?id=04"
+             class="profile-card color-green"
+             data-name="NAME 04">
+
+            <div class="profile-avatar">♡</div>
+
+            <h3 class="profile-name">
+              NAME 04
+            </h3>
+
+            <span class="profile-link-text">
+              PROFILE →
+            </span>
+
+          </a>
+
+
+          <!-- プロフィール05 -->
+          <a href="profile.html?id=05"
+             class="profile-card color-purple"
+             data-name="NAME 05">
+
+            <div class="profile-avatar">✧</div>
+
+            <h3 class="profile-name">
+              NAME 05
+            </h3>
+
+            <span class="profile-link-text">
+              PROFILE →
+            </span>
+
+          </a>
+
+
+          <!-- プロフィール06 -->
+          <a href="profile.html?id=06"
+             class="profile-card color-gray"
+             data-name="NAME 06">
+
+            <div class="profile-avatar">★</div>
+
+            <h3 class="profile-name">
+              NAME 06
+            </h3>
+
+            <span class="profile-link-text">
+              PROFILE →
+            </span>
+
+          </a>
+
+
+          <!-- プロフィール07 -->
+          <a href="profile.html?id=07"
+             class="profile-card color-blue"
+             data-name="NAME 07">
+
+            <div class="profile-avatar">✿</div>
+
+            <h3 class="profile-name">
+              NAME 07
+            </h3>
+
+            <span class="profile-link-text">
+              PROFILE →
+            </span>
+
+          </a>
+
+
+          <!-- プロフィール08 -->
+          <a href="profile.html?id=08"
+             class="profile-card color-pink"
+             data-name="NAME 08">
+
+            <div class="profile-avatar">♡</div>
+
+            <h3 class="profile-name">
+              NAME 08
+            </h3>
+
+            <span class="profile-link-text">
+              PROFILE →
+            </span>
+
+          </a>
+
+
+          <!-- プロフィール09 -->
+          <a href="profile.html?id=09"
+             class="profile-card color-yellow"
+             data-name="NAME 09">
+
+            <div class="profile-avatar">☆</div>
+
+            <h3 class="profile-name">
+              NAME 09
+            </h3>
+
+            <span class="profile-link-text">
+              PROFILE →
+            </span>
+
+          </a>
+
+        </div>
+
+        <!-- 検索結果がない場合 -->
+        <p class="no-results" hidden>
+          該当するプロフィールが見つかりませんでした。
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       フッター
+  ========================= -->
+  <footer class="footer">
+
+    <p class="copyright">
+      © Profile Link
+    </p>
+
+  </footer>
+
+</body>
+</html>
